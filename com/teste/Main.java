@@ -1,5 +1,11 @@
+/*
+ */
 package com.teste;
 
+/**
+ *
+ * @author Kugel Soft Informática LTDA - Rodrigo de Bona Sartor
+ */
 public class Main {
 
   /**
@@ -7,11 +13,10 @@ public class Main {
    */
   public static void main( String[] args ) {
     System.out.println( encontrarMaiorNumeroDeIteracoes( 1, 1000000 ) );
-
   }
 
-  public static int processar( int num ) {
-    int resultado;
+  public static long processar( long num ) {
+    long resultado;
 
     if ( num % 2 == 0 ) {
       resultado = processarPar( num );
@@ -23,15 +28,15 @@ public class Main {
     return resultado;
   }
 
-  public static int processarPar( int num ) {
+  public static long processarPar( long num ) {
     return num / 2;
   }
 
-  public static int processarImpar( int num ) {
+  public static long processarImpar( long num ) {
     return (3 * num) + 1;
   }
 
-  public static int interar( int num ) {
+  public static int interar( long num ) {
     int iteracoes = 0;
     while ( num > 1 ) {
       num = processar( num );
